@@ -103,7 +103,6 @@ function bindShopEvents() {
     })
 
     $("#showFavourites").on("change", function () {
-        console.log(this.checked);
         showProducts();
     })
 
@@ -127,7 +126,6 @@ function showProducts() {
     filteredProducts = sortProducts(filteredProducts);
     setupPagination(filteredProducts);
     let paginatedProducts = paginateProducts(filteredProducts, currentPage);
-    console.log(paginatedProducts);
 
 
     if (filteredProducts.length === 0) {
