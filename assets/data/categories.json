@@ -1,0 +1,38 @@
+[
+    {
+        "id": 1,
+        "name": "Smartphones"
+    },
+    {
+        "id": 2,
+        "name": "Laptops"
+    },
+    {
+        "id": 3,
+        "name": "Headphones"
+    },
+    {
+        "id": 4,
+        "name": "Monitors"
+    },
+    {
+        "id": 5,
+        "name": "Keyboards"
+    },
+    {
+        "id": 6,
+        "name": "Mice"
+    },
+    {
+        "id": 7,
+        "name": "Tablets"
+    },
+    {
+        "id": 8,
+        "name": "Smartwatches"
+    },
+    {
+        "id": 9,
+        "name": "Cameras"
+    }
+]

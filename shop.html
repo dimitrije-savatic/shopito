@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Shopito - Product Listing Page</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <link rel="apple-touch-icon" href="assets/img/apple-icon.png">
+    <link rel="shortcut icon" type="image/x-icon" href="assets/img/favicon.ico">
+
+    <link rel="stylesheet" href="assets/css/bootstrap.min.css">
+    <link rel="stylesheet" href="assets/css/templatemo.css">
+    <link rel="stylesheet" href="assets/css/custom.css">
+
+    <!-- Load fonts style after rendering the layout styles -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" rel="stylesheet">
+
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;200;300;400;500;700;900&display=swap">
+    <link rel="stylesheet" href="assets/css/fontawesome.min.css">
+    <!--
+    
+TemplateMo 559 Zay Shop
+
+https://templatemo.com/tm-559-zay-shop
+
+-->
+</head>
+
+<body>
+    <!-- Header -->
+    <nav class="navbar navbar-expand-lg navbar-light shadow" id="header">
+    </nav>
+    <!-- Close Header -->
+
+    <!-- Start Content -->
+    <div class="container py-5">
+        <div class="row">
+
+            <!-- Filter Sidebar -->
+            <div class="col-lg-3">
+                <h4 class="mb-3">Filter Products</h4>
+
+                <!-- Category -->
+                <div class="mb-3">
+                    <label class="form-label">Category</label>
+                    <select class="form-select" id="categories">
+                    </select>
+                </div>
+
+                <!-- Brand -->
+                <div class="mb-3">
+                    <label class="form-label">Brand</label>
+                    <select class="form-select" id="brands">
+                    </select>
+                </div>
+
+                <!-- Price Range -->
+                <div class="mb-3">
+                    <label class="form-label">Price Range</label>
+                    <div class="d-flex gap-2">
+                        <input type="number" class="form-control" placeholder="Min" id="minPrice" min="0">
+                        <input type="number" class="form-control" placeholder="Max" id="maxPrice" min="0" max="10000">
+                    </div>
+                </div>
+
+                <!-- Rating Slider -->
+                <div class="mb-3">
+                    <label class="form-label">Rating</label>
+                    <input type="range" class="form-range" min="1" max="5" step="0.5" value="1" class="btn-success"
+                        id="rating">
+                    <div class="d-flex justify-content-between small">
+                        <span>1</span>
+                        <span>2</span>
+                        <span>3</span>
+                        <span>4</span>
+                        <span>5</span>
+                    </div>
+                </div>
+
+                <!-- Discount -->
+                <div class="form-check mb-3">
+                    <input class="form-check-input" type="checkbox" id="discountedOnly">
+                    <label class="form-check-label">
+                        On Sale
+                    </label>
+                </div>
+            </div>
+            <!-- End Filter Sidebar-->
+
+            <div class="col-lg-9">
+                <div class="row d-flex align-items-center justify-content-between mb-4">
+                    <div class="col-md-4">
+                        <div class="d-flex align-items-center justify-content-start gap-3">
+                            <label class="h5 mb-0">Show only favourites</label>
+                            <input class="form-check-input" type="checkbox" id="showFavourites">
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="input-group d-flex align-items-center justify-content-start gap-3">
+                            <input type="text" class="form-control" id="search" name="q" placeholder="Search ...">
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="d-flex align-items-center justify-content-end gap-3">
+                            <label class="h5 mb-0">Sort</label>
+                            <select class="form-select w-auto" id="sortProducts">
+                                <option value="">Default</option>
+                                <option value="title-asc">A to Z</option>
+                                <option value="title-desc">Z to A</option>
+                                <option value="price-asc">Price: Low to High</option>
+                                <option value="price-desc">Price: High to Low</option>
+                                <option value="rating-desc">Rating: High to Low</option>
+
+                            </select>
+                        </div>
+                    </div>
+                </div>
+                <div class="row d-flex justify-content-center align-items-center">
+                    <div id="loader" style="display:none;">
+                        <img src="assets/img/ajax-loader.gif" alt="Loading..." />
+                    </div>
+                </div>
+                <div class="row" id="products">
+                </div>
+                <div class="row d-flex justify-content-center align-items-center">
+                    <div class="col-md-6 d-flex align-items-center justify-content-between">
+                        <p id="noResults" class="hidden">There are no products for selected category.</p>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="row d-flex align-items-center justify-content-between mb-4">
+                        <div class="col-md-6">
+                            <div class="d-flex align-items-center justify-content-start gap-3">
+                                <label class="h5 mb-0">Products per page</label>
+                                <select class="form-select w-auto" id="productsPerPage">
+                                    <option value="6">6</option>
+                                    <option value="9">9</option>
+                                    <option value="12">12</option>
+
+                                </select>
+                            </div>
+                        </div>
+                        <div class="col-md-6">
+                            <div class="d-flex align-items-center justify-content-end gap-3">
+                                <ul class="pagination pagination-lg justify-content-end" id="pagination">
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- End Content -->
+
+    <!-- Start Footer -->
+    <footer class="bg-dark" id="tempaltemo_footer">
+    </footer>
+    <button id="backToTop" class="btn btn-success">
+        <i class="fas fa-arrow-up"></i>
+    </button>
+    <!-- End Footer -->
+
+    <!-- Start Script -->
+    <script src="assets/js/jquery-1.11.0.min.js"></script>
+    <script src="assets/js/jquery-migrate-1.2.1.min.js"></script>
+    <script src="assets/js/bootstrap.bundle.min.js"></script>
+    <script src="assets/js/templatemo.js"></script>
+    <script src="assets/js/shop.js"></script>
+    <script src="assets/js/main.js"></script>
+    <script src="assets/js/cart.js"></script>
+    <!-- End Script -->
+</body>
+
+</html>

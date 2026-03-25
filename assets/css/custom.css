@@ -1,0 +1,50 @@
+/*
+Custom Css
+*/
+.hidden {
+    display: none;
+}
+
+#backToTop {
+    position: fixed;
+    bottom: 30px;
+    right: 30px;
+    display: none;
+    width: 45px;
+    height: 45px;
+    font-size: 20px;
+    align-items: center;
+    justify-content: center;
+    z-index: 1000;
+}
+
+.shop-toast {
+    position: fixed;
+    top: 16px;
+    right: 16px;
+    z-index: 1080;
+    color: #fff;
+    padding: 10px 14px;
+    border-radius: 8px;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+    opacity: 0;
+    transform: translateY(-8px);
+    transition: opacity 0.2s ease, transform 0.2s ease;
+}
+
+.shop-toast.show {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+.error {
+    color: red;
+    font-size: 12px;
+    display: block;
+    margin-top: 4px;
+}
+
+input.error-border,
+textarea.error-border {
+    border: 1px solid red;
+}
