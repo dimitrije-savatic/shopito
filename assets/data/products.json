@@ -6,7 +6,7 @@
         "specification": "6.1-inch OLED, A16 chip, 128GB",
         "price": 975,
         "discount": 0,
-        "rating": 4.4,
+        "rating": 3.4,
         "tags": [
             "smartphone",
             "ios",
@@ -69,7 +69,7 @@
         "specification": "13.4-inch FHD+, Intel i7, 16GB RAM",
         "price": 1434,
         "discount": 0,
-        "rating": 4.5,
+        "rating": 2.5,
         "tags": [
             "laptop",
             "ultrabook",
@@ -90,7 +90,7 @@
         "specification": "Bluetooth 5.2, 30h battery, ANC",
         "price": 377,
         "discount": 15,
-        "rating": 4.5,
+        "rating": 3.5,
         "tags": [
             "headphones",
             "noise-cancelling",
@@ -111,7 +111,7 @@
         "specification": "AMOLED display, GPS, heart-rate monitor",
         "price": 343,
         "discount": 20,
-        "rating": 4.8,
+        "rating": 3.8,
         "tags": [
             "smartwatch",
             "fitness",
@@ -216,7 +216,7 @@
         "specification": "Focus Pro 30K DPI sensor",
         "price": 246,
         "discount": 15,
-        "rating": 4.8,
+        "rating": 2.8,
         "tags": [
             "mouse",
             "gaming",
@@ -237,7 +237,7 @@
         "specification": "RGB lighting, adjustable switches",
         "price": 213,
         "discount": 5,
-        "rating": 4.9,
+        "rating": 3.9,
         "tags": [
             "keyboard",
             "gaming",
@@ -280,7 +280,7 @@
         "specification": "Ryzen 9, RTX 4060, 16GB RAM",
         "price": 1741,
         "discount": 5,
-        "rating": 4.4,
+        "rating": 3.4,
         "tags": [
             "laptop",
             "gaming",
@@ -427,7 +427,7 @@
         "specification": "AMOLED display, GPS, heart-rate monitor",
         "price": 411,
         "discount": 10,
-        "rating": 4.9,
+        "rating": 2.9,
         "tags": [
             "smartwatch",
             "fitness",
@@ -574,7 +574,7 @@
         "specification": "49-inch DQHD, 240Hz VA panel",
         "price": 1100,
         "discount": 10,
-        "rating": 4.7,
+        "rating": 3.7,
         "tags": [
             "monitor",
             "gaming",

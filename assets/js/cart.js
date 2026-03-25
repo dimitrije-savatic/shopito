@@ -78,10 +78,10 @@ function renderCart() {
                             <h6 class="text-center mb-0 mx-1">Quantity</h6>
                         </div>
                         <div class="col-2">
-                            <h6 class="text-center mb-0">Product price</h6>
+                            <h6 class="text-center mb-0">Discount</h6>
                         </div>
                         <div class="col-2">
-                            <h6 class="text-center mb-0">Full price</h6>
+                            <h6 class="text-center mb-0">Price</h6>
                         </div>
                         <div class="col-2 text-center">
                             <h6 class="text-center mb-0"><i class="fas fa-trash-alt"></i></h6>
@@ -124,7 +124,7 @@ function renderCart() {
 
                     <!-- Price -->
                     <div class="col-2">
-                        <h6 class="text-center mb-0">$${product.price.toFixed(2)}</h6>
+                        <h6 class="text-center mb-0 mx-5 py-2 text-white bg-danger rounded">-${product.discount}%</h6>
                     </div>
 
                     <!--Full Price-->
@@ -172,8 +172,9 @@ function showTotalDiscount() {
             totalDiscount += product.discount;
         }
     }
+    totalDiscount = totalDiscount / cart.length || 0;
     if (container) {
-        container.textContent = `-${totalDiscount}%`;
+        container.textContent = `-${totalDiscount.toFixed(0)}%`;
     }
 }
 
