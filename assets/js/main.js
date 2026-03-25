@@ -112,9 +112,9 @@ function renderFooter() {
                         <li><a class="text-decoration-none" href="index.html">Home</a></li>
                         <li><a class="text-decoration-none" href="about.html">About Us</a></li>
                         <li><a class="text-decoration-none" href="shop.html">Shop</a></li>
-                        <li><a class="text-decoration-none" href="#">Author</a></li>
-                        <li><a class="text-decoration-none" href="#">Documentation</a></li>
                         <li><a class="text-decoration-none" href="contact.html">Contact</a></li>
+                        <li><a class="text-decoration-none" href="author.html">Author</a></li>
+                        <li><a class="text-decoration-none" href="#">Documentation</a></li>
                         <li><a class="text-decoration-none" href="sitemap.xml">Sitemap</a></li>
                     </ul>
                 </div>
