@@ -165,7 +165,7 @@ function showProducts() {
                                 </div>
                             </div>
                             <div class="card-body">
-                                <a href="shop-single.html" class="h3 text-decoration-none">${product.title}</a>
+                                <p class="h3 text-decoration-none">${product.title}</p>
                                 <ul class="list-unstyled d-flex justify-content-center">
                                 <li id="stars-${product.id}">
                                     ${stars}  

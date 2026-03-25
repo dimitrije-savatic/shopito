@@ -76,7 +76,7 @@ function renderFeaturedProducts() {
                                 </li>
                                 <li class="text-muted text-right">$${getDiscountedPrice(product.price, product.discount)}</li>
                             </ul>
-                            <a href="shop-single.html" class="h2 text-decoration-none text-dark">${product.title}</a>
+                            <a href="shop.html" class="h2 text-decoration-none text-dark">${product.title}</a>
                             <p class="card-text">
                                 ${product.description.length > 100 ? product.description.substring(0, 100) + "..." : product.description}
                             </p>
